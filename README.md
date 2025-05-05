@@ -33,8 +33,8 @@ Clone este repositório e abra os arquivos `.html` em seu navegador preferido.
 Não é necessário nenhum servidor ou dependência externa.
 
 ```bash
-git clone https://github.com/Sara-source01/Css3-Files-Practices.git
-cd Css3-Files-Practices
+git clone https://github.com/Sara-source01/JavaScript-Files-Practices.git
+cd JavaScript-Files-Practices
 
 ## 📚 Ideal para
 
@@ -48,6 +48,6 @@ Sinta-se à vontade para explorar, modificar e melhorar os exemplos! Pull Reques
 
 ## 🧑‍💻 Autor
 
-Desenvolvido por **Sara George**  
+Desenvolvido por Sara George
 📫 Contato: (mailto:sara.ebrahim.george@gmail.com)  
 🌐 Portfólio: (https://github.com/Sara-source01/Meu-portfolio.git)
