@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic operators</title>
+</head>
+
+<body>
+    <h2>Arithmetic operators</h2>
+    <script>
+        console.log(10) //r= 10
+        console.log(5 + 5) //r= 10
+        console.log(5 + 5) //r= 10
+
+        var x = 100 + 200
+        console.log(x) //r= 300
+
+        var a = 400 - 100
+        console.log(a) //r= 300
+
+        var b = -200
+        console.log(b) //r= -200
+
+        var c = 100 - 600
+        console.log(c) //r= -500
+
+        var d = 10 * 20
+        console.log(d) //r= 200
+
+        var e = 10 / 20
+        console.log(e) //r= 0.5
+
+        var f = e * 100
+        console.log(f) //r= 0.5 * 100 = 50
+
+
+        var j = e * 100 + 20 - 30
+        console.log(j) //r= (0.5 * 100) + (20 - 30) = 50-10 = 40
+
+        var h = j * 5 + 20 * e
+        console.log(h) //r= (40 * 5) + (20 * 0.5) = 200 + 10 = 210
+
+        var i = j * 5 + 20 * j
+        console.log(i) //r= (40 * 5) + (20 * 40) = 200 + 800 = 1000
+
+
+
+        var g = 10
+        console.log(g) // re= 10
+
+        g = 11
+        console.log(g) // mostra 10 depois 11
+
+        g = g + 3
+        console.log(g) // mostra 10 depois 11 depois 14
+
+        g++
+        console.log(g) // mostra 10 depois 11 depois 14 depois 15
+
+        g += 5
+        console.log(g) // o final valor de g era 15 + 5 = 20
+
+        g++
+        g += 20
+        console.log(g) // o final valor de g era 20 + 1 + 20 = 41
+
+        var k = 5
+        console.log(k) //5
+
+        g += k * 10
+        console.log(g) // o final valor de g era 41+(5*10) => 41+50=91
+
+
+
+        var s = "hello"
+        console.log(s + 10) // NaN 
+        console.log(s + "10") // hello10 
+        console.log(s + " " + "10") // hello 10 
+
+        var m = "olá"
+        console.log(m + "mundo!") // olámundo!
+        console.log(m + " " + "mundo!") // olá mundo!
+        console.log(m + " mundo !") // olá mundo !
+        console.log(m - " mundo!") // NaN 
+
+        var n = "sara"
+        console.log(n) // sara
+        n++
+        console.log(n) // NaN (n++ oprimeiro erro)
+        n += n + "28"
+        console.log(n) // NaNNaN28 (não funciona com n++ o primeiro erro+ o segundo erro)
+        n = n + "28"
+        console.log(n) // NaNNaN2828 (não funciona com n++ o primeiro, segundo, terceiro erro)
+
+        var w = "Madrid"
+        console.log(w) //Madrid
+        w += w + 1
+        console.log(w) //MadridMadrid1 , não funciona console.log(w+)
+        w += w + "1"
+        console.log(w) //MadridMadrid1MadridMadrid11 , não funciona console.log(w+)
+        w = w + 10
+        console.log(w) //MadridMadrid1MadridMadrid1110
+
+
+
+        var v = "home"
+        console.log(v + "302") // home302
+        console.log(v + " 302") // home 302
+
+
+        var o = "hello"
+        console.log(o) // hello
+        o = o + 1
+        console.log(o) //hello1
+
+
+        var y = "novo"
+        console.log(y) //novo
+        y = y + "10"
+        console.log(y) //novo10
+        y = y + " " + "30"
+        console.log(y) //novo10 30
+
+
+
+        var q = "soso"
+        console.log(q) // soso
+        q += 10
+        console.log(q) // soso10
+        q = q + "40"
+        console.log(q) // soso1040  
+
+        var text1 = "Good"
+        var text2 = "Morning"
+        console.log(text1 + " " + text2) // Good Morning 
+
+        var text3 = text1 + text2 
+        console.log(text3) // GoodMorning 
+        var text4 = text1 + " " +text2 
+        console.log(text4) // Good Morning 
+
+        var test1 = "20"
+        var test2 = "25"
+        console.log(test1 + " " + text2) // 20 Morning 
+        console.log(test1 + " " + test2) // 20 25
+
+        var sum = test1+test2 // concatenation, Summation
+        console.log(sum) // 2025
+
+        var sub = test1-test2 // Subtraction
+        console.log(sub) // r= 20-25= -5 (converte os strings para números a fazer a opração matemática)
+
+        var mult = test1 * test2 // Multiplication
+        console.log(mult) //r= 20*25 = 500 (converte os strings para números a fazer a opração matemática)
+
+        var div = test1 / test2 // Division
+        console.log(div) // r= 20/25 = 0.8 (converte os strings para números a fazer a opração matemática)
+
+        var mod = test2 % test1 // Modulo
+        console.log(mod) // r= 25%20 = 5 (converte os strings para números a fazer a opração matemática)
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

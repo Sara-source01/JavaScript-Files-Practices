@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>²Challenge of loop with string</title>
+</head>
+
+<body>
+    <p>Mesmo Desafio mas Resumir Condição de if
+        (if (loweredChar != "a" && loweredChar != "e" && loweredChar != "i" && loweredChar != "o" && loweredChar !=
+        "u"))
+        usando array</p>
+    <div style="text-align: center; font-size: 30px;">
+        Vowel letters: (A, E, I, O, U)
+        <br>
+        <input type="text" id="string-input">
+        <button id="submit">submit</button>
+        <h2 id="result"></h2>
+    </div>
+
+</body>
+<script>
+
+    document.getElementById("submit").addEventListener("click", function () {
+        /* imprimir só toda frase ou palavra nova sem repetir os antigos
+        result foi vazio para não efeitar os antigos resultados (limpar) */
+        document.getElementById("result").innerHTML = ``
+
+
+        var text = document.getElementById("string-input").value
+        const vowels = ["a", "e", "i", "o", "u"];
+        for (var char of text) {
+            var loweredChar = char.toLowerCase() // se vowels letters foram capital vai converter ao lowercase e não imprimir 
+            //forma  if charcter não igual a && não igual e .. até u
+            // ! not não existe vowels, imprima as letras
+            if (!vowels.includes(loweredChar)) {
+                document.getElementById("result").innerHTML += `${char}</br>` // ou "<h1>"+char+"</h1>", (char)ficar as letras capital não vowels capital durante imprimir         
+
+
+            }
+        }
+
+    })
+
+
+</script>
+
+</html>

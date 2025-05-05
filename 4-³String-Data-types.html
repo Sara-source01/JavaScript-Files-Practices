@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>³String-Data-types</title>
+</head>
+
+<body>
+    <h2>³String-Data-types</h2>
+    <script>
+        var title = "Hello World"
+        console.log(title.toUpperCase()) // HELLO WORLD
+
+        var surname = "GEORGE"
+        console.log(surname.toLowerCase()) //george
+
+        var a = "sara george"
+        console.log(a.replace("sara", "ebrahim")) //ebrahim george
+
+
+        var b = "sara george"
+        console.log(b.replace("r", "m")) // sama george
+
+
+        var d = "SARA GEORGE"
+        console.log(d.replace("GEORGE", "Mercho")) // SARA Mercho
+
+        var e = "SAMARA GEORGE"
+        var elowercased = e.toLowerCase()
+        console.log(elowercased.replace("samara", "j")) // j george
+
+
+        var name = "welcome world"
+        console.log(name.charAt(1)) // e | chegar à letra e de welcome
+        /*                 
+        contar de 0 como substring 
+        usando charAt para chegar à letra 
+        específica no texto (string name)
+        */
+
+
+        var mychar = name.charAt(7)
+        console.log(mychar) // vazio porque 7 é o índice de espaço entre welcome world 
+        console.log(typeof mychar) // string
+        console.log(name[0]) //w | outra forma ao invés de charAt para chegar a letra específica no string
+
+        var f = "home"
+        var i = "happy"
+        var cor = "rosa"
+        console.log(f + " " + i) // home happy
+        console.log("hello " + cor + ", welcome home") // hello rosa, welcome home 
+        console.log(`olá ${cor}, welcome home`)// olá rosa, welcome home
+
+
+    </script>
+</body>
+
+</html>

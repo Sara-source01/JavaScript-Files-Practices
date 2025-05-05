@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chalenge of Array</title>
+</head>
+
+<body>
+    <div style="text-align: center; margin-top: 100px;">
+        <input type="text" id="student-input">
+        <button id="add-student-btn">Submit</button>
+        <button id="delete-student-btn">Delete</button>
+        <div id="students" style="font-size: 30px;"></div>
+
+
+    </div>
+
+
+</body>
+<script>
+    // criar array para incluir todos os nomes entrados quando o usuárion clica submit
+    var students = ["Sara", " Luca"]
+    /* colocar um lugar vázio (div) para mosrtar os nomes que o usuário 
+    escreve no campo de input e depois clicar submit esses nomes
+     mostrarão na página de navegador*/
+    /* esse código só mostrará sara, luca que eu entrei no array
+    não vai ser operação de link contínua para mostrar os nomes
+    que o usuário vai digitar no campo de input e depois clicar submit
+    então deve colocar esse código dentro eventlisenter pois ele
+    vai funcionar toda vez o usuário clicar no submit
+    então eu vou converter ao comentário*/
+    //document.getElementById("students").innerHTML = students
+    // fazer link entre input e botão submit quando o usário clica nele
+    document.getElementById("add-student-btn").addEventListener("click", function () {
+        //console.log("hello") para conferir que código que tem botão click funciona ou não
+        var studentName = document.getElementById("student-input").value // o valor de esse id mosrtará na página de navegador quando o usúario preencher input
+        console.log(studentName) // testar que o variável funciona
+        students.push(studentName)// adicionar nomes 
+        // mover esse código para aqui
+        document.getElementById("students").innerHTML = students
+        // para deletar o nome de campo de input depos clicar submit
+        document.getElementById("student-input").value = ""
+
+
+    })
+
+    document.getElementById("delete-student-btn").addEventListener("click", function () {
+        //console.log("delete")
+        students.pop() // essa função de array deletar o final elemento de array toda vez o usuário clicar no botão de deletar 
+
+        // para atulizar as informações entre adicionar nomes ou deletar 
+        document.getElementById("students").innerHTML = students
+
+
+
+    })
+
+
+</script>
+
+</html>

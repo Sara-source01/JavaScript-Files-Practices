@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade de for loop(outra forma)</title>
+</head>
+
+<body>
+    <h2>Atividade de for loop</h2>
+
+</body>
+<script>
+    /*imprimir os números de 0 a 500 só pares números
+    (0,2,4 ...,500)
+    um valor inicial de começo é 0*/
+    /* for (var i = 0; i <= 500; i+=2){
+         console.log(i) // 0,2,4,6, ....500
+     }
+         */
+
+    /* outra forma
+    usando frases de condições dentro for loop 
+    */
+    /* pode ser number<500 || number ==500
+    mas number <= 500 melhor porque essa condição é breve */
+
+
+    for (number = 0; number <= 500; number++) {
+
+        if (number % 2 == 0) {
+            console.log(number)
+        }
+
+
+    }
+
+</script>
+
+</html>

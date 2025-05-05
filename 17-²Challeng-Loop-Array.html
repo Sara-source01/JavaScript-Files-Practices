@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>²Challenge-loop with Array</title>
+</head>
+
+<body>
+    <!-- é importante assistir os vídeos ou ler o caderno -->
+    <!-- criar UI -->
+    <div style="text-align: center; font-size: 50px;">
+        <div>
+            Find Student
+            <br>
+            <input id="student-input" type="text">
+            <button id="search">Search</button>
+        </div>
+        
+            <div id="school" style="font-size: 20px;"></div>
+            <h2 id="result"></h2>
+        
+    </div>
+</body>
+<script>
+    /*// representa o nome de aluno que o usuário vai pesquisar
+        var name = document.getElementById("student-input").value.toLowerCase()*/
+   
+   /* // student é o aluno que eu paro nele
+        for (var student of school) {*/
+   
+        var school = ["Yarob", "Ahmed", "Khaled", "Omar", "Jaber", "Sami", "Salem"]
+    for (memberIndex = 0; memberIndex <= school.length -1; memberIndex++) {
+        document.getElementById("school").innerHTML += school[memberIndex] + " -- "
+    }
+
+    document.getElementById("search").addEventListener("click", function() {
+       
+        var name = document.getElementById("student-input").value.toLowerCase()
+        
+        var isFound = false
+        for (var student of school) {
+            var loweredStudent = student.toLowerCase()
+            if (name == loweredStudent) {
+                isFound = true   
+            } 
+
+        }
+// a fora de for loop
+if (isFound == true){
+    document.getElementById("result").innerHTML = `${name} is in the school.`
+}else{
+    document.getElementById("result").innerHTML = `${name} is NOT in the school.`
+}
+
+    })
+
+
+</script>
+
+</html>

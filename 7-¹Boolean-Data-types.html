@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-¹Boolean-Data-types</title>
+</head>
+
+<body>
+    <h2>Boolean (uma resposta de uma pergunta pois a resposta ser só "True,ou False")</h2>
+    <script>
+        var x = true //sem usar "", laranja: true é um valor de Boolean
+        console.log(x)//true de cor azul, é diferent de string "true" que ser branco
+        console.log(typeof (x)) // boolean (uma resposta true ou false)
+        console.log(isNaN(x)) //false | isNaN (Só True "sim número",ou False "não")
+
+        var y = "Hello"
+        var z = isNaN(y) //variável de chamar uma função de isNaN para (y)
+        console.log(z) // true então o tipo de z é boolean
+        console.log(typeof (z)) // boolean (uma resposta true ou false)
+
+        var a = 10 // um exemplo de tipo de pergunta "comparação"
+        var b = 20 // o programador faz apergunta de tipo de comparação | direcione a pergunta para JS | JS dará a resposta
+        console.log(a > b) // false | a>b uma expressão de programação porque ela tem uma resposta true ou false | a pergunta dependendo de compreensão de progração é 'a é maior de b ou não?'
+        console.log(a < b) // true | a>b uma expressão de programação porque ela tem uma resposta true ou false | a pergunta dependendo de compreensão de progração é 'a é maior de b ou não?'
+        console.log(a = b) // 20 | nós usamos = para dar um valor para um variável novo então neste caso pedimos dar o variável 'a' um valor novo é igual  o variável "b"
+        console.log(a == b) // true | nós usamos == (a é igual de b ou não?)para fazer uma pergunta lógica (true ou false)
+        console.log(a >= b) // true | nós usamos >= (a é  maior ou igual que b ou não?) se a resposta foi (a maior que b, ou a igual que b será true) mas se a reposta (a menor que b será false)
+        console.log(a <= b) // true mesmo que a = -10 | nós usamos <= (a é  menor ou igual que b ou não?) se a resposta foi (a menor que b, ou a igual que b será true) mas se a reposta (a maior que b será false)
+        console.log(a == true) // false, a é um número e não igual true| 10 é um valor de tipo número de variável a, mas quando usa esse valor 10 em uma pergunta true ou false, o tipo dele será boolean
+        console.log(Boolean(a)) // true | imprimir a operação de converter (a ao boolean)
+        console.log(Boolean(a) == true) // true | converter a ao boolean temorariamente para comparação (a com true)
+
+
+        var f = "hello"
+        console.log(f) // hello
+        console.log(Boolean(f)) // true | se o valor foi no boolean um string ou todos os números exceto zero, string vazio, NaN
+        console.log(typeof (f)) // string
+
+
+        var c = 0 //
+        console.log(c) // 0
+        console.log(Boolean(c)) // false porque ele é zero, esse a única exceção quando usa no boolean pois todos os números darão uma resposta (true)
+        console.log(typeof (c)) // number
+
+
+        var d = NaN // deve escreve NaN | dar um valor not a number diretamente 
+        console.log(d) // NaN
+        console.log(Boolean(d)) // false
+        console.log(typeof (d)) // number
+
+
+        var e = "" //(um string vazio)
+        console.log(e) // vazio
+        console.log(Boolean(e)) // false
+        console.log(typeof (e)) // string
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-²Arrays-Operations</title>
+</head>
+
+<body>
+    <div id="students_array" style="font-size: 30px;"></div>
+
+
+</body>
+<script>
+
+    var students = ["Yarob", " khaled", "Ahmed", "Mohammed", "Omar", "Sara", "George", " Sami"]
+    console.log(typeof students) // object 
+    // Exibir array para o cliente (usuário) na página de Html
+    document.getElementById("students_array").innerHTML = students // Yarob, khaled,Ahmed,Mohammed,Omar,Sara,George, Sami
+    // Exibir array no unidade de controle"console" para mim (programador ou developer)
+    console.log(students) // o primeiro elemento no array enfrenta a primeira letra(caracter) no string 0
+    console.log(students.length) // 8 , como string , de 1 ao infinito
+    console.log(students[0]) //Yarob | imprimir (exibir no console para developer) só o o nome do aluno primeiro Yarob
+    console.log(students[4]) //Omar | imprimir (exibir no console para developer) só o o nome do aluno Omar
+    console.log(students[9]) // undefined, não tem index de nome de estudante
+    /* para adicionar um aluno novo sem adicionar no array diretamente
+     e se tem input e botão no html que permite o usuário
+     a adicionar um aluno novo usando input e button
+     o nome de array (students) dot(.) função de array(push) (o nome do aluno novo) */
+    students.push("Salem")
+    students.push("Samar")
+    /* deve fazer console.log depois de adicionar de nome novo
+     ,todos os nomes de arrays com o nome novo (Salem) no fim depois adicionar o novo nome 
+    'Yarob', ' khaled', 'Ahmed', 'Mohammed', 'Omar', 'Sara', 'George', ' Sami', 'Salem' ,'Samar' */
+    console.log(students) // length 10
+    console.log(students[8]) // Salem, imprimir só o nome do aluno novo
+    students.push("Karla")
+    console.log(students) // 'Yarob', ' khaled', 'Ahmed', 'Mohammed', 'Omar', 'Sara', 'George', ' Sami', 'Salem', 'Samar', 'Karla'
+    console.log(students[9]) // Samar ,length 11  , antes emcima era undefined antes de adicionar nomes novos
+    // trocar Khaled que tem index 1 por um aluno novo (Ammar)
+    students[1] = "Ammar"
+    console.log(students) // 'Yarob', 'Ammar', 'Ahmed', 'Mohammed', 'Omar', 'Sara', 'George', ' Sami', 'Salem', 'Samar', 'Karla']
+    // deletar o último elemento karla no array usando função de array "pop" , karla saíu de escola
+    // não precisa colocar nenhum parâmetro dentro() porque pop delete o último elemento
+    students.pop()
+    console.log(students) // length 10, 'Yarob', 'Ammar', 'Ahmed', 'Mohammed', 'Omar', 'Sara', 'George', ' Sami', 'Salem', 'Samar'
+    students.pop() // deletar o último elemento Sami
+    students.pop() // deletar o último elemento Salem
+    students.pop() // deletar o último elemento Samar
+    console.log(students) // length 7 , 'Yarob', 'Ammar', 'Ahmed', 'Mohammed', 'Omar', 'Sara', 'George'
+
+</script>
+
+</html>

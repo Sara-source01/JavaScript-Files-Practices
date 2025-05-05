@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String-Challenge</title>
+</head>
+<body>
+    <h2>¹String-Challenge</h2>
+    <!-- a resolva em linhas
+     (13+14, 17, 31+32, 37+38) -->
+    <script>
+var mystr = "Hello World"
+console.log(mystr)
+
+
+var allCaps = mystr.toLocaleUpperCase()
+console.log(mystr + " " + allCaps)
+console.log(mystr, '\n' ,allCaps)
+console.log(allCaps.toUpperCase())
+
+
+
+
+
+var message = `${mystr}\n${allCaps}`
+console.log(message)
+
+
+console.log(allCaps.replace("O", "Y"))
+
+
+var replaceO = allCaps.replace("O", "Y")
+console.log(replaceO)
+
+
+var reversestr = replaceO.split("").reverse().join("");
+console.log(reversestr)
+
+
+
+var reversecorrect = allCaps.split("").reverse().join("");
+console.log(reversecorrect)
+
+
+
+
+    </script>
+    
+</body>
+</html>

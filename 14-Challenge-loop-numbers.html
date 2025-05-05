@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge loop with numbers</title>
+</head>
+<body>
+    <div id="result" style="font-size: 30px; text-align: center;"></div>
+</body>
+
+<script>
+    /* Tabuada de 10
+    de 0 a 30*/
+    /* هذا الحل سيظهر فقط نتيجة ضرب
+ العشرة من الصفر حتى ال30*/
+
+    /*for (var dez = 0; dez <=300; dez++){
+        if (dez % 10 ==  0){
+            console.log(dez)
+            document.getElementById("result").innerHTML = dez
+            
+        }
+       
+    }*/
+
+    /*لحل لا ينزل عليك فجاة بل بالبداية تكتب الأكواد
+     ثم تكتشف إنو غير كامل ويلزمه إضافات أو تعديلات أو تصحيح الكود
+       على النتيجة يلي تريدها حتى توصل في النهاية */
+ 
+       for (var number = 0; number <=30; number++){
+        /*+= para repetir todos os números de 0 a 30 * 10 não só 10*30=300
+        porque ele é loop mostrará o resultado de repetir todo ciclo(iteration)*/
+        /* .innerHTML poderimos usar tags de html para
+         mostrar os elementos na linha separada*/
+        
+        document.getElementById("result").innerHTML += `<h1>10 x ${number} = ${number*10}</h1>`
+       // ou document.getElementById("result").innerHTML += `10 x ${number} = ${number*10}</br>`
+          
+            
+    }
+    
+    
+
+
+</script>
+</html>

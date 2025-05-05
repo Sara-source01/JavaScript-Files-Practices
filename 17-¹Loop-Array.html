@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¹Loop with Array</title>
+</head>
+
+<body>
+
+    <div id="school" style="font-size: 50px; text-align: center;"></div>
+</body>
+<script>
+    // uma escola contém grupo de nomes de alunos
+    /* uma problema se essa escola tem os nome de professores e alunons,
+     e quero imprimir só os nomes de professores (T.Yarob, T.Ahmed)
+    dentro mesma array */
+    // poderia usar for loop, for in , for of
+    var school = ["T.Yarob", "T.Ahmed", "Khaled", "Omar", "Jaber"]
+    for (var memberIndex = 0; memberIndex < school.length; memberIndex++) {
+
+        //3- 0 primeira letra de todo nome
+        if (school[memberIndex][0] == "T") {
+
+            document.getElementById("school").innerHTML += school[memberIndex] + " - "
+        }
+        /*2 += repepiter os nomes de arry,
+     school(memberIndex) school é array de nomes
+     mas para fazer link e reagir entre index com os nomes de array (school)
+    colocamos (memberIndex é um variável dentro for loop em primeira frase)
+     referendo de lugar de index todo nome, 
+    dessa forma ficamos controlar os elementos um por um
+    por exemplo poderia coloca dash entre os nomes
+    document.getElementById("school").innerHTML += school[memberIndex] + " - " ou "</br>"
+     ou coloca todo nome em linha separada 
+     document.getElementById("school").innerHTML += `${school[memberIndex]}</br>`ou  `<h1>${school[memberIndex]}</h1>`"*/
+
+    }
+
+
+
+
+
+
+
+</script>
+<script>
+
+
+
+
+
+
+
+
+</script>
+
+</html>

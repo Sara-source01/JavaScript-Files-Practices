@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop-String</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //QUEREMOS mostrar as letras (toda letra separada) de variável de string 
+
+    /*usando index de letras
+    
+    var name ="Tarmeez"
+    console.log(name[0]) // T
+    console.log(name[1]) // a
+    console.log(name[2]) // r
+    console.log(name[3]) // m
+    console.log(name[4]) // e
+    console.log(name[5]) // e
+    console.log(name[6]) // z
+    */
+    /* usando for loop para mostrar letras de ordem correto*/
+    // x<=6 ou x<7
+    // essa forma não é felxbilidade
+
+    /*for (var x = 0; x<=6; x++){
+    
+    console.log(name[x]) // Tarmeez, letras separadas
+    
+    }
+    */
+    /*var name1 = "Learning simply"
+    for (var x1 = 0; x1<=14; x1++){
+    
+    console.log(name1[x1]) // Learning , letras separadas  COM O ESPAÇO ENTRE DUAS PALAVRAS
+    
+    }
+    */
+
+
+
+
+    /* mesmo exemplo MAS quero adicionar welcome to dentro de name1
+    e toda vez queremos adicionar palavra devemos contar 
+    todas as letras de frases dentro de variável de string
+    com espaços de 0 até final de frase
+    e mudar um valor de condição x1<=?*/
+    /* x2<=name.length um erro((undefined) colocar = 
+    poque length de frase de 1 não de 0 como index[]
+    então deve colocar quando usa lenghth com index 
+    (x2<name.length)OU (x2<name.length-1)*/
+
+    var name2 = "Welcome to Learning simply"
+    for (var x2 = 0; x2 < name2.length; x2++) {
+
+        console.log(name2[x2]) // Welcome to Learning simply , letras separadas COM OS ESPAÇOS entre palavras
+
+    }
+
+
+</script>
+
+</html>

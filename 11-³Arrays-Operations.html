@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-³Arrays-Operations</title>
+</head>
+
+<body>
+    <div id="students_array" style="font-size: 30px;"></div>
+
+
+</body>
+<script>
+
+    var students = ["Yarob", " khaled", "Ahmed", "Mohammed", "Omar", "Sara", "George", " Sami"]
+    console.log(typeof students) // object 
+    // Exibir array para o cliente (usuário) na página de Html
+    document.getElementById("students_array").innerHTML = students // Yarob, khaled,Ahmed,Mohammed,Omar,Sara,George, Sami
+    // Exibir array no unidade de controle"console" para mim (programador ou developer)
+    console.log(students) // o primeiro elemento no array enfrenta a primeira letra(caracter) no string 0
+    console.log(students.length) // 8 , como string , de 1 ao infinito de nomes
+
+
+
+    // deletar um nome específico no array usando função de array(splice)
+    /*splice aceita muitos parâmetros opicionais 
+    mas para deletar precisam só o primeiro parâmetro
+    que representa a index de elemento de nome que queremos deletar 
+    de array */
+    students.splice(5)
+    console.log(students) // deletou não só Sara mas também os nomes que vem depois George, Sami
+    students.splice(1, 2) // deletar khaled 1 e que vem depois ele Ahmed
+    console.log(students)
+    students.push("Noura", " Dima", "Ranim")
+    console.log(students) // length 6, 'Yarob', 'Mohammed', 'Omar', 'Noura', ' Dima', 'Ranim'
+    students.splice(2, 1) // deletar só Omar
+    console.log(students) // length 5, 'Yarob', 'Mohammed', 'Noura', ' Dima', 'Ranim''
+    document.getElementById("students_array").innerHTML = students // atualizar os nomes
+    // length 5 de document emcima, 'Yarob', 'Mohammed', 'Noura', ' Dima', 'Ranim'' na página de html
+
+    students.splice(2, 1, "Salem") // deletar Noura e trocar ela por Salem
+    console.log(students) // length 5,'Yarob', 'Mohammed', 'Salem', ' Dima', 'Ranim'
+
+    students.splice(3, 2, "Fares") // deletar Dima e que vem depois ela (Ranim) e trocar Dima3 por Fares3
+    console.log(students) // length 4, 'Yarob', 'Mohammed', 'Salem', 'Fares'
+
+
+
+    /* adicionar um elemento novo no index específico de array
+não no final de array como faz push
+e sem deletar ou trocar qualquer elemento outro */
+    // adicionar Jala em index de array 1 
+    // e outos elementos faz shift para eles ('Mohammed', 'Salem', 'Fares'')
+    students.splice(1, 0, "Jalal")
+    console.log(students) // length 5, 'Yarob', 'Jalal', 'Mohammed', 'Salem', 'Fares''
+
+
+
+    // dicionar nomes no index específico de array (Salem3) sem deletar ou trocar
+    students.splice(3, 0, "Kinda", " Alex", "Tawfic")
+    console.log(students) // length 8, 'Yarob', 'Jalal', 'Mohammed', 'Salem', 'Kinda', ' Alex', 'Tawfic', 'Fares'
+   
+   
+   // atulizar as alterações na página de Html 
+   document.getElementById("students_array").innerHTML = students
+</script>
+
+</html>

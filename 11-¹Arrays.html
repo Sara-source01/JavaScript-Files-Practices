@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+
+<body>
+    <h2>Arrays</h2>
+    <div id="student" style="font-size: 30px;"></div>
+    <div id="students_array" style="font-size: 30px;"></div>
+
+</body>
+<script>
+    // primeiro exemplo
+    var st = "Yarob"
+    var st2 = "Khaled"
+    var st3 = "Ahmed"
+    var st4 = "Mohammed"
+    var st5 = "Omar"
+
+    /* = signfica que você trocará st por que vem depois como st2 etc
+    então não mostrará só um variável " Omar" último na página de HTML */
+    // a solução é adicionar +
+    document.getElementById("student").innerHTML = st // Yarob
+    document.getElementById("student").innerHTML += " " + st2 // Yarob Khaled
+    document.getElementById("student").innerHTML += " " + st3 // Yarob Khaled Ahmed
+    document.getElementById("student").innerHTML += " " + st4 // Yarob Khaled Ahmed Mohammed
+    document.getElementById("student").innerHTML += " " + st5 // Yarob Khaled Ahmed Mohammed Omar
+
+    
+    
+    
+    
+    /* Segundo exemplo usando arrays para colocar muito alunos 
+    e deletar um deles quando ele saí dessa escola */
+    /* array é um variável 
+    mas a diferença é no parte de valores inteiros de array */
+    // os valores de array deve colocar dentro []
+    /* poderia adicionar um aluno novo ou deletar um nome de um aluno dentro 
+    array (var students = ["Yarob","Khaled","NOVO ALUNO"])
+    ou deletar "Khaled", */
+    var students = ["Yarob", " khaled", "Ahmed", "Mohammed", "Omar", "Sara", "George", " Sami"]
+    console.log(typeof students) // object 
+
+    document.getElementById("students_array").innerHTML = students // Yarob, khaled,Ahmed,Mohammed,Omar,Sara,George, Sami
+
+
+</script>
+
+</html>

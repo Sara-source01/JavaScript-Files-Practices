@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in com string</title>
+</head>
+
+<body>
+    <p>JavaScript E muitas languagens de programação fizeram uma
+        Copia outra de for loop para usar com string, o nome dessa
+        copia é FOR IN.
+        Tem também outra copia de for loop é FOR OF (mais breve de for in)
+        tem a mesma forma de usar for in mas ao invés de usar in 
+        usamos of.
+    </p>
+</body>
+<script>
+    /* não precisa dar um valor inicial para um variável i 
+    na frase primeira quando usa for in.
+    e não coloca 3 frases pois foi usado  uma copia de breve
+     */
+    var name = "Welcome to Tarmeez channel"
+    // desabitar for loop porque aqui usamos for in com string
+   /* for (var x = 0; x < name.length; x++) {
+
+        console.log(name[x]) // Welcome to Tarmeez channel , letras separadas COM OS ESPAÇOS entre palavras
+
+    }*/
+
+
+    for (var i in name) {
+
+        //console.log(i) // de 1 a 25 que representa length de name
+        console.log(name[i]) // Welcome to Tarmeez channel , letras separadas COM OS ESPAÇOS entre palavras
+    }
+
+
+
+</script>
+
+</html>

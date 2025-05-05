@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6-Numbers-Data-types</title>
+</head>
+<h2>Numbers (isNaN(Só True "sim número",ou False "não"), Math(min, max))</h2>
+
+<body>
+    <!-- NaN é uma mensagem mostra no
+     console F12 para indicar 'Not a Number'
+     que a operação matematíca não funciona -->
+    <!-- dois strings "10", "20"
+      (Summation(+), concatentation r= 1020)
+      (Subtraction (-), 10-20 aceita operação matemática r= -10)
+      (Multiplication (*), 10*2 aceita operação matemática r= 200)
+      (Division (/), 10/20 aceita operação matemática r= 0.5)
+      (Modulo (%), 20%10 aceita operação matemática r= 0)
+       -->
+</body>
+<script>
+    var x = "10"
+    var y = "20"
+    var Summation = x + y
+    console.log(Summation) // 1020, concatenation
+    console.log(isNaN(Summation)) // false, isNan mostra se o quociente de variável é número ou não número
+    console.log(typeof (Summation)) // string
+
+    var Subtraction = x - y
+    console.log(Subtraction) // 10-20= -10  (converte os strings para números a fazer a opração matemática)
+    console.log(isNaN(Subtraction)) // false, isNan mostra se o quociente de variável é número ou não número
+    console.log(typeof (Subtraction)) // number
+
+    var z = "hello"
+    var Multiplication = z * x // "hello" * "10"
+    console.log(Multiplication) // NaN , isNaN descubre que o quociente de variável"Multiplication" é Nan not a number
+    console.log(isNaN(Multiplication)) // r= True, True porque o quociente de variável"Multiplication" é Nan que significa não é número
+    console.log(typeof (Multiplication)) // number
+
+    var a = 10 // deve escrever Math com M capital
+    var b = 20 // Math: um libraria de JS que contém funções várias e úteis ao chamar essas funções
+    console.log(Math.min(a, b)) //r= 10 | o valor mínimo entre os variáveis (a & b)
+    console.log(Math.min(a, b, 30, 50, 2, 40)) //r= 2 | o valor mínimo os variáveis (a & b) e outros valores(parâmetros"info")
+    console.log(Math.max(a, b)) //r= 20 | o valor máximo entre os variáveis (a & b)
+    console.log(Math.max(a, b, 30, 50, 2, 40)) //r= 50 | o valor máximo os variáveis (a & b) e outros valores(parâmetros"info")
+
+
+
+
+</script>
+
+</html>

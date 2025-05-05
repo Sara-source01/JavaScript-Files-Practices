@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-Casting</title>
+</head>
+
+<body>
+    <h2>Casting (converter number ou boolean ao string, string ao number, number ou string ao boolean)</h2>
+</body>
+<script>
+
+    var x = "10"
+    var y = "20"
+    console.log(x + y) // 1020| concatenation
+
+    /*
+    se quer fazer sum (uma operação matemática x+y=30)
+    ao invés de concatenation  (juntar string x+y=1020)
+    para os dois variáveis sem saber os valores iniciais
+    de x e y
+    usando casting temporariamente (converter um tipo (string) de data para outro tipo de data (Number))
+    */
+
+    console.log(Number(x) + y) // 1020 de cor branco porque é string| ficou y string mas x foi convertado ao número| fazer casting(Number) para x de string ao número
+    console.log(Number(x) + Number(y)) // 30 de cor roxo porque é número | Number com N capital | x e y foram convertado aos números| fazer casting(Number) para x de string ao número
+    console.log(typeof x) // string | porque foi convertado ao número só na linha de converter emcima
+    console.log(typeof y) // string | porque foi convertado ao número só na linha de converter emcima
+
+    /*
+    se quer converter x ou y de string ao número para sempre
+    deve dar um valor novo para x e para y usando Number
+    */
+    x = Number(x)
+    console.log(x) // 10
+    console.log(typeof x) // number de cor branco
+
+
+    y = Number(y)
+    console.log(y) // 20
+    console.log(typeof y) // number de cor branco
+
+    /* no caso converter osnúmeros ao string */
+    var a = 10
+    var b = 20
+    console.log(x + y) // 30
+
+    /*
+    se quer fazer concatenation "juntar string" (a+b=1020)
+    ao invés de uma operação matemática (a+b=30)
+    para os dois variáveis sem saber os valores iniciais
+    de a e b
+    usando casting temporariamente (converter um tipo (número) de data
+    para outro tipo de data (string))
+    
+    */
+    console.log(String(a) + b) // 1020 | é suficiente converter somente um variável para fazer concatenation
+    console.log(String(a) + String(b)) // 1020 | String com S capital
+    console.log(typeof a) // number | Casting temporariamente, apenas na linha de converter
+    console.log(typeof b) // number | o converto temporariamente, apenas na linha de converter
+
+
+/* outra forma */a
+    console.log(a.toString() + b) //1020
+    console.log(typeof a) // number | Casting temporariamente, apenas na linha de converter
+    console.log(a.toString() + b.toString()) //1020
+    console.log(typeof b) // number | Casting temporariamente, apenas na linha de converter
+
+    /*
+       se quer converter a ou b de número ao string para sempre
+       deve dar um valor novo para x e para y usando String
+       */
+    a = String(a)
+    console.log(a) // 10 branco
+    console.log(typeof a) // string
+
+
+    b = String(b)
+    console.log(b) // 20 branco
+    console.log(typeof b) // string
+
+
+    /* no caso converter um número ao Boolean*/
+    var c = 25
+    console.log(c) // 25
+    console.log(Boolean(c)) // true
+    console.log(typeof c) // number | temporariamente na linha de casting emcima
+    c = Boolean(c) // dar um valor novo para variável usando Boolean
+    console.log(c) // true | todos os valores são true (number ou string) | false é de valores NaN, 0, string vazio 
+    console.log(typeof c) // boolean | para sempre
+
+    /* no caso converter um string ao Boolean*/
+    var e = "hello world"
+    console.log(e) // hello world
+    console.log(Boolean(e)) // true
+    console.log(typeof e) // string | temporariamente na linha de casting emcima
+    e = Boolean(e) // dar um valor novo para variável usando Boolean
+    console.log(e) // true | todos os valores são true (number ou string) | false é de valores NaN, 0, string vazio 
+    console.log(typeof e) // boolean | para sempre
+
+    /* no caso converter um string ao Boolean*/
+    var i = "true" // tipo de string
+    console.log(i) // true
+    console.log(Boolean(i)) // true
+    console.log(typeof i) // string
+
+    /* no caso converter um string ao Boolean*/
+    var f = "false" // tipo de string
+    console.log(f) // false
+    console.log(Boolean(f)) // true
+    console.log(typeof f) // string
+
+
+    /* no caso converter um boolean ao string*/
+    var k = true // tipo boolean
+    console.log(k) // true de cor roxo (boolean)
+    console.log(String(k)) // true de cor branco (string) temporariamente
+    console.log(typeof k) // boolean
+    console.log(k.toString()) // true de cor branco (string)temporariamente| outra forma | outra forma
+    console.log(typeof k) // boolean
+    k = String(k)
+    console.log(k) // true de cor branco (string)
+    console.log(typeof k) // string para sempre
+
+
+    var ka = false // tipo de boolean
+    console.log(ka) // false de cor roxo (boolean)
+    console.log(typeof ka) // boolean
+
+
+</script>
+
+
+
+</html>

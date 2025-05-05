@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-³Extra-String-Challenge</title>
+</head>
+
+<body>
+    <!-- <h2 id="title">Hello World</h2> -->
+    <input id="string-input" type="text">
+    <button id="submit-btn">submit</button>
+    <h3 id="result"></h3>
+
+
+<script>
+    document.getElementById("submit-btn").addEventListener("click", function () {
+        //console.log("click")
+        var mystr = document.getElementById("string-input").value
+        console.log(mystr)
+        var allCaps = mystr.toLocaleUpperCase()
+        //console.log(mystr, '\n' ,allCaps)
+        var replaceO = allCaps.replace("O", "Y")
+        //console.log(replaceO)
+        var reversestr = replaceO.split("").reverse().join("");
+        console.log(reversestr)
+        var reversestr = replaceO.split("").reverse().join("");
+        document.getElementById("result").innerHTML = `${allCaps} --- ${replaceO} --- ${reversestr}`
+        //console.log(reversestr)
+    })
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10-If-Statements</title>
+</head>
+
+<body>
+  <h2>If Statements/ if else</h2>
+</body>
+<script>
+  var age1 = 60
+  console.log(age1) // 60
+  console.log("this man is old and his age is: " + age1) // this man is old and his age is: 60
+  /*  a linha acima vai executar sem interessar quanto o valor
+  que o usúario vai digitar de sua idade 
+  então se ele é 10 ou 20 ou 30 ou 50 etc
+  a mensagem será que this man is old  and his age is: 60 */
+  /* a gente tem um variável (age)
+  mas não sabe o valor dele porque o usúario
+  digitou o valor e dependendo o seu valor (sua idade)
+  ou uma condição específico,
+   devemos mostrar uma saída (output)
+   */
+
+
+
+  //exemplo novo
+  /* primeiramente começa a escrever uma expressão lógica
+  (If statmenhts, if () dentro parênteses escrevemos
+  uma uma expressão lógica de programação "boolean expressão(true ou false)"*/
+  //if (var x = 10) erro porque não uma frase condicional pois sua resposta não será true ou false
+  /*  if (age >= 50) a pergunta de condição{
+  console.log("Old and the age is: " + age) a resposta de condição que vai executar 
+  se a resposta de usúario foi true
+  */
+
+  var age = 70 // Old and the age is: 70
+  //pode começar com o mais age como uma condição age>=60
+  if (age >= 55) {
+    console.log("Old and the age is: " + age)
+
+  }
+  if (age < 55) {
+    console.log("Young and the age is: " + age)
+
+  }
+
+  /* shorthand: uma condição com duas respostas
+  se a condição não foi atendida 
+  Js vai executar a segunda resposta*/
+
+  var age2 = 20 // a resposta atenderá depende de o valor de idade, poderia mudar 50 e vai mostrará outra resposta no console F12
+  if (age >= 50) {
+    console.log("Old and the age is: " + age2)
+  } else {
+    console.log("Young and the age is: " + age2)
+  }
+
+
+
+  /* outro exemplo tem três casos
+  idade pequeno, médio, grande*/
+  /* ler as condições de cima ao baixo,
+  quando uma condição foi entendida ,
+  Js ignorará as outras condições dentro if statement,
+  e lerá outros códigos como console.log("done") etc
+  */
+  /* atenção: se a segunda condição foi, else if (age3 == 80) e var age3 = 80
+  no console mostrará a mensagem de excutar a primeira condição que age3>=60
+  então ignorar a segunda condição
+  pois muito importante colocar as ccondições edquadas 
+  */
+
+  var age3 = 30 // Young and the age is: 30 a resposta atenderá depende de o valor de idade, poderia mudar 50 e vai mostrará outra resposta no console F12
+
+  if (age3 >= 60) {
+    console.log("Old and the age is: " + age3)
+  }
+  else if (age3 >= 40 && age3 < 60) {
+    /* neste caso poderia colocar só (age3 >=40)
+     porque na primeira condição  >60 pois o que é menor que 60 será mid 
+     conclusão: a segunda condição não é uma condição própria
+     mas é seguida para a primeira condição*/
+
+    console.log("Mid and the age is: " + age3)
+  }
+  else {
+    console.log("Young and the age is: " + age3)
+  }
+
+  console.log("done")
+
+  /* outro exemplo*/
+  /* a idade >=40 no mesmo tempo ela será menor que 60
+  e vice versa idade < 60 no mesmo tempo será maior que ou igual 40
+  então condição if neste caso com && vai atender se idade será entre 40 e 59
+  mas || health == "strong" talvez ele vai atender
+   e talvez não dependendo da resposta da usúario
+   quando usar or || precisa atender somente uma condição
+   */
+
+  var age4 = 70 // a resposta atenderá depende de o valor de idade, poderia mudar 50 e vai mostrará outra resposta no console F12
+  var health = "strong" // para usar or || ou not != health !="strong"
+  if (age4 >= 40 && age4 < 60 || health == "strong") {
+    console.log("mid")
+  }
+  console.log("done")
+
+
+</script>
+
+</html>

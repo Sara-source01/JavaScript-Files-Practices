@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>²Data types-String</title>
+</head>
+
+<body>
+    <h2>²Data types-String (função de substring, propriedade de length)</h2>
+
+    <!-- String(um valor de variável "title" porque
+"Hello World" é um test") então
+ esse string(corda) tem funções como substring -->
+    <script>
+        var title = "Hello World"
+        /*
+        substring escreverá as letras de string
+         com digitar dois parâmetros
+        (o primeiro parâmetro
+         para colocar o número de índice de letra primeira, 
+        o segundo parâmetro para colocar o número de letra
+         para mostrar a letra anterior no fim de string)
+        */
+
+        console.log(title.substring(1, 5)) // ello | contar de 0 ao infinito porque indica ao índice(lugar) de letra
+        console.log(title.substring(0, 5)) // Hello | o espaço leva um índice 5
+        console.log(title.substring(0, 7)) // Hello W | se quer adicionar string até letra o de world deve colocar no segundo parâmetros 8 e será incluindo
+        console.log(title.substring(0, 8)) // Hello Wo | não mostará r que tem um índice 8 mas a letra que vim antes o
+        console.log(title.length) // 11 número de letras na string title| contar de letras de string title de 1 ao 11 com espaço
+
+
+    </script>
+
+</body>
+
+</html>

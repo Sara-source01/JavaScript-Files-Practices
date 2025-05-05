@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-²Boolean-Logical Operators</title>
+</head>
+<h2>Boolean-Logical Operators (and(&&), or (||), not(!))</h2>
+<body>
+    <script>
+
+        var x = 10
+        console.log(x > 20)// false
+        console.log(x >= 20)// false | x maior que ou igual 20? | ou é uma das logical operators
+
+        console.log(x > 5)// true
+        console.log(x >= 5)// true
+        console.log(x > 5 && x < 15 ) //true | duas condições usando o logical operator and (&&)
+       
+        var y = 20
+        console.log(y > 5 && y < 15 ) //false | duas condições usando o logical operator and (&&)
+        console.log(x > 5 && y > 15 ) //true | deve duas condições serão corretas para dar true
+        console.log(x > 5 && x < 15 && y > 10 && y == 20) //true | deve quatro condições serão corretas para dar true
+        console.log(x > 5 && x < 15 && y > 10 && y < 20) //false | deve quatro condições serão corretas para dar true
+
+
+        console.log(x > 12)// false
+        console.log(x > 9 || x < 5)// true, || (or) o logical operator, precisa será só uma codição correta para dar true
+        console.log(x > 11 || x == 5)// false, || (or) , false porque nenhuma condição das duas condições será correta
+        console.log(x > 9 || x < 5 || y > 25 || y < 15)// true, || (or) o logical operator, precisa será só uma codição correta para dar true
+        console.log(x > 10 || x < 5 || y > 25 || y < 15)// false, || (or) o logical operator, precisa será só uma codição correta para dar true
+
+
+        var z = x < 9 || x > 10 || y == 20
+        console.log(z) // true, porque condição de (y == 20) correta
+        var w = x > 9 && y == 20
+        console.log(w) // true, porque as duas condições corretas
+
+        var a = x == 10 || y < 20
+        console.log(a) // true, porque condição de (x == 10) correta
+        console.log(!a) // false | not (!) significa faça (a) not true | reverter de true ao false
+        console.log(x == 10) // true | x == 10 (== significa x é igual 10)
+        console.log(x != 10) // false | x != 10 (!= significa x  não é igual 10)
+        console.log(x != 12) // true | x != 12 (!= significa x  não é igual 12)
+
+        var b = x != 5 || x > 11 || y != 20
+        console.log(b) // true, porque condição de (x != 5) correta
+        console.log(!b) // false | not (!) reverter (a frase lógica ) de true ao false
+
+
+    </script>
+
+</body>
+
+</html>

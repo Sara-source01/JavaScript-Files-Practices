@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for of string</title>
+</head>
+
+<body>
+    <p>Tem também outra copia de for loop é FOR OF (mais breve de for in)
+        tem a mesma forma de usar for in mas ao invés de usar in
+        usamos of.</p>
+
+</body>
+<script>
+    // for of 
+    var name = "Welcome to Tarmeez channel"
+
+    for (var i of name) {
+        /* Welcome to Tarmeez channel ,
+         letras separadas COM OS ESPAÇOS entre palavras
+         porque aqui com (for of) , i representa a letra mesma não é index de string*/
+        console.log(i)
+       
+       
+        //console.log(name[i]) // undefined 26 porque i com (for of) represnta letra de string não a index
+
+
+    }
+
+
+
+
+</script>
+
+</html>

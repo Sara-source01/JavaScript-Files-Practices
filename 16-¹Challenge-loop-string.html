@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge of loop with string</title>
+</head>
+
+<body>
+    <div style="text-align: center; font-size: 30px;">
+        Vowel letters: (A, E, I, O, U)
+        <br>
+        <input type="text" id="string-input">
+        <button id="submit">submit</button>
+        <h2 id="result"></h2>
+    </div>
+
+</body>
+<script>
+
+    document.getElementById("submit").addEventListener("click", function () {
+
+        //console.log("hello") // quando clicar submit , hello mostrará no console
+        var text = document.getElementById("string-input").value
+        //console.log(text) // quando colocar palavras dentro input e clicar submit, mostrará no console
+        for (var char of text) {
+            var loweredChar = char.toLowerCase() // se vowels letters foram capital vai converter ao lowercase e não imprimir 
+            //forma  if lcharcter não igual a && não igual e .. até u
+            if (loweredChar != "a" && loweredChar != "e" && loweredChar != "i" && loweredChar != "o" && loweredChar != "u"){
+                document.getElementById("result").innerHTML += `${char}</br>` // ou "<h1>"+char+"</h1>", (char)ficar as letras capital não vowels capital durante imprimir
+            }
+
+           /*
+           essa forma correta para não imprimir vowels letters mas não tem uma resposta
+           de condição if
+           
+           if (char == "a" || char == "e" || char == "i" || char == "o" || char == "u"){
+            
+        }else {
+            document.getElementById("result").innerHTML += `${char}</br>` // ou "<h1>"+char+"</h1>"
+
+        }*/
+
+        }
+
+
+
+
+    })
+
+
+</script>
+
+</html>

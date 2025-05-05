@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Functions</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var string = ["Sara", " Dima", "Fares"] // array com valores string
+    var num = [10, 20, 30] // array com valores numbers
+    var bool = [true, false, true, true, false] // array com valores boolean
+    var datatype = ["Ahmed", true, 20, "Khaled"] // array com todos de datatype
+    console.log(datatype)
+
+
+    var arr = [10, 100, 50, 40, 90, 70, 20]
+    console.log(Array.isArray(arr)) // true | boolean 
+    var str = ""
+    console.log(Array.isArray(str)) // false | boolean 
+    console.log(typeof Array.isArray(str)) // boolean 
+    // outra forma
+    var isArr = Array.isArray(arr)
+    console.log(typeof isArr) // boolean 
+    console.log(arr.includes(90)) // true 90 existe no array arr
+    console.log(arr.includes(500)) // false 500 não existe no array arr
+    console.log(arr.indexOf(50)) // 2 | 50 existe no index de array arr no ordem de 2
+    console.log(arr.indexOf(20)) // 6 | 50 existe no index de array arr no ordem de 6
+    console.log(arr.indexOf(500)) // -1 |  -1 signfica um ordem de elemrento não existe no seu array arr
+
+
+    console.log(arr) // 10, 100, 50, 40, 90, 70, 20
+    arr.shift() // sem colocar parâmetros essa dunção delete o primeiro elemento de array
+    console.log(arr) // 100, 50, 40, 90, 70, 20 
+    arr.shift()
+    console.log(arr) // 50, 40, 90, 70, 20 
+
+    arr.unshift(400) // Essa função (unshift) para adicionar um elemento no começo de array
+    console.log(arr) // 400,50, 40, 90, 70, 20
+
+
+    arr.reverse() // Essa função (reverse) para reverter os elementos de array de direita a esquerda
+    console.log(arr) // [20, 70, 90, 40, 50, 400
+
+
+
+</script>
+
+</html>

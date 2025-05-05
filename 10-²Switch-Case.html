@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10-²Switch-Case</title>
+</head>
+
+<body>
+  <h2>²Switch-Case: uma forma outra para criar as frases condicionais em JS e geralmente em programação</h2>
+  <p>switch is for check, case is for possibilty for this check, console.log() is a respond of condition if the
+    condition is met (se a condição for atendida) </p>
+
+</body>
+<script>
+  // o mesmo exemplo mas em forma diferente de resolver
+  var age = 70 
+  var health = "strong" // strong | a resposta atenderá depende de o valor de idade, poderia mudar strong ,weak ou normal e vai mostrará outra resposta no console F12
+  /* Nota importante:
+  se a primeira condição não for atendida,
+  ele moverá à segunda condição,
+  se a segunda condição não for atendida,
+  ele moverá à terceira condição*/
+  /* tecníca de trabalha de switch: 
+  se uma condição for atendida,
+  ele vai atender todas as condições que
+  vir depois, então deve usar break depois
+  cada resposta de condição (console.log())
+  execto depois default: porque 
+  ele o último caso(ele não for entendido
+  a meno que outros casos antes não sejam atendidas)  */
+  /* se a resposta de health for Normal mas não tem esse caso 
+  ele vai atender a resposta de default*/
+  switch (health) {
+    case ("strong"):
+      console.log("Your health is good")
+      break
+    case ("Weak"):
+      console.log("You need to work on your health")
+      break
+    default: // ele vai atender se as anteriors condições não forma entendidas
+      console.log("good")
+  }
+
+</script>
+
+</html>
