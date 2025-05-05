@@ -1,4 +1,4 @@
-# JavaScript-Files-Practices
+# JavaScript-Practice-Files
 # 📘 Guia de JavaScript (em desenvolvimento)
 Olá! Este repositório contém um guia básico para aprender os fundamentos da **linguagem JavaScript**, organizado em pastas 📂, onde cada uma aborda um tema específico da linguagem.
 
