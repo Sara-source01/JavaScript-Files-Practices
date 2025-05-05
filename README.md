@@ -49,5 +49,5 @@ Sinta-se à vontade para explorar, modificar e melhorar os exemplos! Pull Reques
 ## 🧑‍💻 Autor
 
 Desenvolvido por Sara George
-📫 Contato: (mailto:sara.ebrahim.george@gmail.com)  
+📫 Contato: (mail:sara.ebrahim.george@gmail.com)  
 🌐 Portfólio: (https://github.com/Sara-source01/Meu-portfolio.git)
